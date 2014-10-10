@@ -5,21 +5,24 @@
 $heady-color: RGBA(227, 228, 228, .5);
 $darker-heady: RGBA(227, 228, 228, .9);
 $hover-color: RGBA(65, 131, 196, 1);
+$text-color: #333;
 
 header {
-  background-color:$heady-color;
+  background-color: $heady-color;
   border-bottom: 1px solid $darker-heady;
+  color: $text-color;
 }
 
 nav {
   height: 2.75em;
-  margin: 0 10%;
+  margin: 0 5%;
   .octicon:hover, a {
     color: $hover-color;
   }
 }
 
 ul {
+  display: inline-block;
   font-family: Helvetica, arial, sans-serif;
   font-weight: bold;
   list-style: none;
@@ -31,12 +34,9 @@ ul li {
   font-size: 0.8em;
 }
 
-svg {
-  height: 10%;
-  width: auto;
-}
 ul.left {
   float: left;
+  width: 23%;
   li:first-child {
     padding: .5em;
   }
@@ -50,7 +50,7 @@ ul.mid {
   }
   a {
     text-decoration: none;
-    color: black;
+    color: $text-color;
   }
   a:hover{
     color: $hover-color;
@@ -65,7 +65,7 @@ ul.right {
   }
   a {
     text-decoration: none;
-    color: black;
+    color: $text-color;
   }
   a:hover{
     color: $hover-color;
@@ -82,8 +82,16 @@ input[type="search"] {
   outline: none;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   border: 1px solid #E0E0E0;
+  width: 138%;
 }
 
 .page-wrapper {
-  margin: 0 14%;
+  margin: 0 7.5%;
+}
+
+.huge {
+  margin: 1em;
+  img {
+    border-radius: 6px;
+  }
 }
