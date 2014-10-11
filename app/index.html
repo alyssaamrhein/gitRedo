@@ -10,7 +10,7 @@
   <header>
     <nav>
       <ul class="left">
-        <li><span class="octicon octicon-mark-github"></span></li>
+        <li><a href="#"><span class="mega-octicon octicon-mark-github"></span></a></li>
         <li><input type="search" results=5 placeholder="Search GitHub..." name=s></li>
       </ul>
       <ul class="mid">
@@ -20,8 +20,10 @@
         <li><a href="#">Help</a></li>
       </ul>
       <ul class="right">
-        <li><a href="#">Name</a></li>
-        <li><span class="octicon octicon-plus"></span></li>
+        <li><a href="#"><img src="https://avatars2.githubusercontent.com/u/5555065?v=2&s=40Name" />
+          <span class="name">Name</span></a></li>
+        <li><a href="#"><span class="octicon octicon-plus"></span>
+                        <span class="octicon octicon-triangle-down tiny"></span></a></li>
         <li><span class="octicon octicon-inbox"></span></li>
         <li><span class="octicon octicon-gear"></span></li>
         <li><span class="octicon octicon-sign-out"></span></li>
@@ -29,9 +31,41 @@
     </nav>
   </header>
   <div class="page-wrapper">
-    <div class="icon huge">
-      <img src="http://placecreature.com/230/230" /></div>
-    <h1>I suppose I should write something</h1>
+    <section>
+      <aside>
+        <div class="icon huge">
+          <img src="http://placecreature.com/230/230" />
+              <p>Name</p>
+              <p>Login</p>
+            <hr>
+              <p>created at</p>
+            <hr>
+              <ul>
+                <li>Followers</li>
+                <li>Starred</li>
+                <li>Following</li>
+              </ul>
+            <hr>
+              <p>Organizations</p>
+              <span class="polaroid">
+                <img height="42" width="42" src="https://avatars3.githubusercontent.com/u/8710678?v=2&s=84" alt="">
+              </span>
+        </div>
+      </aside>
+      <article>
+        <div class="tabBlock">
+          <ul class="tabNav">
+            <li><a href="#"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
+            <li><a href="#"><span class="octicon octicon-repo"></span>Repositories</a></li>
+            <li><a href="#"><span class="octicon octicon-rss"></span>Public activity</a></li>
+          </ul>
+          <button class="button"><span class="octicon octicon-pencil"></span>Edit Profile</div>
+        </div>
+        <div class="pop-rop">
+          <h2>Popular Repositories</h2>
+        </div>
+      </article>
+  </section>
   </div><!-- END OF PAGE WRAPPER -->
   <script src='underscore/underscore.js'></script>
   <script src="jquery/dist/jquery.js"></script>
