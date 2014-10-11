@@ -114,3 +114,6 @@ article {
       border-right: 1px solid #dddddd;
       border-radius: 3px 3px 0 0;
       padding: 1em; }
+
+.pop-rop {
+  float: left; }
