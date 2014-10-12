@@ -22,6 +22,7 @@ var withAjax = function () {
 var setProfileInfo = function (profileData) {
   $('.name').text(profileData.name);
   $('.login').text(profileData.login);
+  $('#created_at').text(profileData.created_at);
   $('#avatar').html("<img src='" + profileData.avatar_url + "'/>");
   $('#location').text(profileData.location);
 

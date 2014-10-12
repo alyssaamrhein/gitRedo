@@ -39,7 +39,7 @@
               <h1 class='name'></h1>
               <h2 class='login'></h2>
             <hr>
-              <div id='createdContainer'></div>
+              <span class="octicon octicon-clock"></span><div id='created_at'></div>
             <hr>
               <ul>
                 <li>Followers</li>
@@ -78,8 +78,6 @@
       </article>
     </div><!-- END OF PAGE WRAPPER -->
   </section>
-  <script id='nameTemplate' type='text/template'><h1><%= name %></h1></script>
-  <script id='loginTemplate' type='text/template'><h2><%= login %></h2></script>
   <script id='createdTemplate' type='text/template'><p><%= created_at %></p></script>
   <script src='underscore/underscore.js'></script>
   <script src="jquery/dist/jquery.js"></script>
