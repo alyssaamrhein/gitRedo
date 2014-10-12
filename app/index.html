@@ -55,20 +55,23 @@
       <article>
           <div class="tabBlock">
             <ul class="tabNav">
-              <li><a href="#"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
-              <li><a href="#"><span class="octicon octicon-repo"></span>Repositories</a></li>
-              <li><a href="#"><span class="octicon octicon-rss"></span>Public activity</a></li>
+              <li data-target='contributions'><a href="#"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
+              <li data-target='repositories'><a href="#"><span class="octicon octicon-repo"></span>Repositories</a></li>
+              <li data-target='public'><a href="#"><span class="octicon octicon-rss"></span>Public activity</a></li>
             </ul>
             <button class="button"><span class="octicon octicon-pencil"></span>Edit Profile</div>
           </div>
           <div class="pop-rop">
-            <h2>Popular Repositories</h2>
+            <h1>Popular Repositories</h1>
+            <section id="contributions">Stuff</section>
+            <section id="repositories">Things</section>
+            <section id="public">Other</section>
           </div>
       </article>
     </div><!-- END OF PAGE WRAPPER -->
   </section>
-  <script id='nameTemplate' type='text/template'><p class="name"><%= name %></p></script>
-  <script id='loginTemplate' type='text/template'><p><%= login %></p></script>
+  <script id='nameTemplate' type='text/template'><h1><%= name %></h1></script>
+  <script id='loginTemplate' type='text/template'><h2><%= login %></h2></script>
   <script id='createdTemplate' type='text/template'><p><%= created_at %></p></script>
   <script src='underscore/underscore.js'></script>
   <script src="jquery/dist/jquery.js"></script>

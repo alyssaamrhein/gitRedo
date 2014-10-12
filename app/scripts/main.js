@@ -56,3 +56,15 @@ $('#loginContainer').html(
 $('#createdContainer').html(
   _.template($('#createdTemplate').html())(results)
 );
+
+/* Tab JS */
+
+$('li').on('click', function (event) {
+  var targetID = '#' + $(this).data('target');
+  $(this).add(targetID)
+         .addClass('active')
+         .siblings()
+         .removeClass('active');
+});
+
+/* End of Tab JS */

@@ -8,6 +8,17 @@ header {
   border-bottom: 1px solid RGBA(227, 228, 228, 0.9);
   color: #333; }
 
+h1 {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 1.75em;
+  color: #333; }
+
+h2 {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 1.25em;
+  font-weight: 100;
+  color: #666; }
+
 ul {
   font-family: Helvetica, arial, sans-serif;
   font-weight: bold;
@@ -109,7 +120,8 @@ article {
       float: left;
       padding: 0;
       margin-bottom: -1px; }
-      article .tabNav li:active {
+      article .tabNav li .active {
+        border-bottom: 2px solid white;
         height: 34px; }
     article .tabNav span {
       padding: 0.25em; }
@@ -122,3 +134,8 @@ article {
 
 .pop-rop {
   float: left; }
+  .pop-rop section {
+    display: none;
+    width: 500px; }
+    .pop-rop section.active {
+      display: inline-block; }

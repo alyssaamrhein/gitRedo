@@ -8,6 +8,7 @@ $heady-color: RGBA(227, 228, 228, .5);
 $darker-heady: RGBA(227, 228, 228, .9);
 $hover-color: RGBA(65, 131, 196, 1);
 $text-color: #333;
+$lighter-text: #666;
 $primary-font: Helvetica, arial, sans-serif;
 
 header {
@@ -16,6 +17,18 @@ header {
   color: $text-color;
 }
 
+h1 {
+  font-family: $primary-font;
+  font-size: 1.75em;
+  color: $text-color;
+}
+
+h2 {
+  font-family: $primary-font;
+  font-size: 1.25em;
+  font-weight: 100;
+  color: $lighter-text;
+}
 
 ul {
   font-family: $primary-font;
@@ -149,7 +162,8 @@ article {
       float: left;
       padding: 0;
       margin-bottom: -1px;
-        &:active{
+        .active{
+        border-bottom: 2px solid white;
         height: 34px;
         }
       }
@@ -166,4 +180,14 @@ article {
 
 .pop-rop {
   float: left;
+
+  section {
+    display: none;
+    width: 500px;
+
+    &.active {
+
+      display: inline-block;
+    }
+  }
 }
