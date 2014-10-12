@@ -43,3 +43,7 @@ var results = {
   "created_at": "2013-09-27T04:49:55Z",
   "updated_at": "2014-10-10T22:06:08Z"
 };
+
+
+var compiled = _.template("hello: <%= name %>");
+compiled(results);

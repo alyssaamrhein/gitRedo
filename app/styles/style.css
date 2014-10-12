@@ -75,6 +75,8 @@ aside {
     margin: 1em; }
     aside .huge img {
       border-radius: 6px; }
+  aside ul li {
+    display: inline-block; }
 
 span.polaroid {
   height: 10px; }
