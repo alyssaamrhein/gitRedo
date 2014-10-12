@@ -77,19 +77,21 @@ input[type="search"] {
 .page-wrapper {
   margin: 0 8.5%; }
 
+#avatar {
+  margin: 1em 0 0 0; }
+  #avatar img {
+    border-radius: 6px;
+    height: 230px; }
+
 aside {
   display: inline-block;
   float: left;
   font-family: Helvetica, arial, sans-serif;
   margin: 0.5em 0;
   width: 25%; }
-  aside .huge {
-    margin: 1em 0; }
-    aside .huge img {
-      border-radius: 6px; }
   aside ul li {
     display: inline-block; }
-  aside p.name {
+  aside .name {
     font-weight: bold; }
 
 span.polaroid {
@@ -139,3 +141,19 @@ article {
     width: 500px; }
     .pop-rop section.active {
       display: inline-block; }
+
+.error {
+  background: red;
+  color: white;
+  text-align: center;
+  padding: 0px;
+  opacity: 1;
+  transition: opacity 2s ease-in-out; }
+
+.info {
+  background: #3A3A3A;
+  color: white;
+  float: left;
+  padding: 15px;
+  overflow: hidden;
+  font-family: monospace; }

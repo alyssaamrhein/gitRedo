@@ -107,6 +107,14 @@ input[type="search"] {
   margin: 0 8.5%;
 }
 
+#avatar{
+  margin: 1em 0 0 0;
+  img{
+    border-radius: 6px;
+    height: 230px;
+  }
+}
+
 aside {
   display: inline-block;
   float: left;
@@ -114,18 +122,12 @@ aside {
   margin: .5em 0;
   width: 25%;
 
-  .huge {
-    margin: 1em 0;
-    img {
-      border-radius: 6px;
-    }
-  }
 
   ul li{
     display:inline-block;
   }
 
-  p.name {
+  .name {
     font-weight: bold;
   }
 }
@@ -190,4 +192,22 @@ article {
       display: inline-block;
     }
   }
+}
+
+.error {
+  background: red;
+  color: white;
+  text-align:center;
+  padding: 0px;
+  opacity:1;
+  transition: opacity 2s ease-in-out;
+}
+
+.info {
+  background: #3A3A3A;
+  color: white;
+  float: left;
+  padding: 15px;
+  overflow:hidden;
+  font-family: monospace;
 }

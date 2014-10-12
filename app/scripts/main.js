@@ -1,16 +1,39 @@
-// get json from github api
-// assign to variables
-// 2 apis
-///// ---1 is profile info
-///// ---1 is repo info
-// so two variables
+var API_URL = 'https://api.github.com/users/alyssaamrhein';
+// calling the url
+var withAjax = function () {
+  $.ajax({url: API_URL}).done(function (data) {
 
-// templates in html
-// which is where data is put
+    $('.info').text(JSON.stringify(data));
 
-//
-//
-//
+    setProfileInfo(data);
+
+  }).fail(function (data) {
+
+    $('.error').removeClass('fade').text(data.responseJSON.message);
+
+    setTimeout(function () {
+      $('.error').addClass('fade');
+    }, 1000);
+
+  });
+};
+
+
+var setProfileInfo = function (profileData) {
+  $('.name').text(profileData.name);
+  $('.login').text(profileData.login);
+  $('#avatar').html("<img src='" + profileData.avatar_url + "'/>");
+  $('#location').text(profileData.location);
+
+  $('#link').prop('href', profileData.html_url);
+
+  $('#blog').html("<a href='" + profileData.blog + "'>" + profileData.blog + "</a>");
+  $('#email').text(profileData.email);
+};
+
+withAjax();
+
+/*
 var results = {
   "login": "alyssaamrhein",
   "id": 5555065,
@@ -43,6 +66,7 @@ var results = {
   "created_at": "2013-09-27T04:49:55Z",
   "updated_at": "2014-10-10T22:06:08Z"
 };
+*/
 
 
 $('#nameContainer').html(

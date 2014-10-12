@@ -30,14 +30,14 @@
       </ul>
     </nav>
   </header>
-  <section>
+  <section class="profile">
     <div class="page-wrapper">
       <aside>
-        <div class="icon huge">
+        <div id="avatar">
           <img src="http://placecreature.com/230/230" />
         </div>
-              <div id='nameContainer'></div>
-              <div id='loginContainer'></div>
+              <h1 class='name'></h1>
+              <h2 class='login'></h2>
             <hr>
               <div id='createdContainer'></div>
             <hr>
@@ -63,9 +63,17 @@
           </div>
           <div class="pop-rop">
             <h1>Popular Repositories</h1>
-            <section id="contributions">Stuff</section>
+            <section id="contributions"> <div class='info'></div></section>
             <section id="repositories">Things</section>
             <section id="public">Other</section>
+          </div>
+          <div class="testing">
+            <section class='request'>
+              <div class='error'></div>
+              <div class='info'>
+                <h1>Results</h1>
+              </div>
+            </section>
           </div>
       </article>
     </div><!-- END OF PAGE WRAPPER -->
