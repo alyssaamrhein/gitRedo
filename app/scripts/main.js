@@ -45,5 +45,14 @@ var results = {
 };
 
 
-var compiled = _.template("hello: <%= name %>");
-compiled(results);
+$('#nameContainer').html(
+  _.template($('#nameTemplate').html())(results)
+);
+
+$('#loginContainer').html(
+  _.template($('#loginTemplate').html())(results)
+);
+
+$('#createdContainer').html(
+  _.template($('#createdTemplate').html())(results)
+);

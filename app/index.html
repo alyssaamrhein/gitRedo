@@ -36,12 +36,10 @@
         <div class="icon huge">
           <img src="http://placecreature.com/230/230" />
         </div>
-              <script id="nameTemplate" type='text/template'>
-                <p><%= name %></p>
-              </script>
-              <p>Login</p>
+              <div id='nameContainer'></div>
+              <div id='loginContainer'></div>
             <hr>
-              <p>created at</p>
+              <div id='createdContainer'></div>
             <hr>
               <ul>
                 <li>Followers</li>
@@ -69,6 +67,9 @@
       </article>
     </div><!-- END OF PAGE WRAPPER -->
   </section>
+  <script id='nameTemplate' type='text/template'><p class="name"><%= name %></p></script>
+  <script id='loginTemplate' type='text/template'><p><%= login %></p></script>
+  <script id='createdTemplate' type='text/template'><p><%= created_at %></p></script>
   <script src='underscore/underscore.js'></script>
   <script src="jquery/dist/jquery.js"></script>
   <script src='scripts/main.js'></script>

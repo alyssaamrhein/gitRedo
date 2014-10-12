@@ -91,17 +91,18 @@ input[type="search"] {
 }
 
 .page-wrapper {
-  margin: 0 7.5%;
+  margin: 0 8.5%;
 }
 
 aside {
   display: inline-block;
   float: left;
+  font-family:$primary-font;
   margin: .5em 0;
   width: 25%;
 
   .huge {
-    margin: 1em;
+    margin: 1em 0;
     img {
       border-radius: 6px;
     }
@@ -109,6 +110,10 @@ aside {
 
   ul li{
     display:inline-block;
+  }
+
+  p.name {
+    font-weight: bold;
   }
 }
 
@@ -127,8 +132,8 @@ article {
     height: 2.65em;
     margin: 0 0 15px;
     .button {
-      background-color: #E0E0E0;
-      border: 1px solid #333;
+      background-color: #F5F5F5;
+      border: 1px solid #E0E0E0;
       border-radius: 3px;
       display: inline-block;
       float: right;
