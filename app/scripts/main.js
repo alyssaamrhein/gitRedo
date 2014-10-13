@@ -27,7 +27,7 @@ var gettinRepo = function () {
 
     $('.info2').text(JSON.stringify(data));
 
-    setRepoInfo();
+    setRepoInfo(data);
 
 
   }).fail(function (data) {
