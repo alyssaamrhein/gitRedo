@@ -32,26 +32,7 @@
   </header>
   <section class="profile">
     <div class="page-wrapper">
-      <aside>
-        <div id="avatar">
-          <img src="http://placecreature.com/230/230" />
-        </div>
-              <h1 class='name'></h1>
-              <h2 class='login'></h2>
-            <hr>
-              <span class="octicon octicon-clock"></span><div id='created_at'></div>
-            <hr>
-              <ul>
-                <li>Followers</li>
-                <li>Starred</li>
-                <li>Following</li>
-              </ul>
-            <hr>
-              <p>Organizations</p>
-              <span class="polaroid">
-                <img height="42" width="42" src="https://avatars3.githubusercontent.com/u/8710678?v=2&s=84" alt="">
-              </span>
-      </aside>
+    <div id="sidebar"></div>
       <article>
           <div class="tabBlock">
             <ul class="tabNav">
@@ -62,15 +43,20 @@
             <button class="button"><span class="octicon octicon-pencil"></span>Edit Profile</div>
           </div>
           <div class="pop-rop">
-            <h1>Popular Repositories</h1>
-            <section id="contributions"> <div class='info'></div></section>
+            <section id="contributions">
+              <div id="popRop"></div>
+              </section>
             <section id="repositories">Things</section>
             <section id="public">Other</section>
           </div>
+
           <div class="testing">
             <section class='request'>
               <div class='error'></div>
               <div class='info'>
+                <h1>Results</h1>
+              </div>
+              <div class='info2'>
                 <h1>Results</h1>
               </div>
             </section>
@@ -78,7 +64,31 @@
       </article>
     </div><!-- END OF PAGE WRAPPER -->
   </section>
-  <script id='createdTemplate' type='text/template'><p><%= created_at %></p></script>
+  <script type="text/template" id="tabTemplate">
+    <h1><%= name %></h1>
+  </script>
+  <script type="text/template" id="sidebarTemplate">
+    <aside>
+      <div id="avatar">
+        <img src="<%= avatar_url %>" />
+      </div>
+            <h1><%= name %></h1>
+            <h2><%= login %></h2>
+          <hr>
+            <span class="octicon octicon-clock"></span><%= created_at %>
+          <hr>
+            <ul>
+              <li>Followers</li>
+              <li>Starred</li>
+              <li>Following</li>
+            </ul>
+          <hr>
+            <p>Organizations</p>
+            <span class="polaroid">
+              <img height="42" width="42" src="https://avatars3.githubusercontent.com/u/8710678?v=2&s=84" alt="">
+            </span>
+    </aside>
+  </script>
   <script src='underscore/underscore.js'></script>
   <script src="jquery/dist/jquery.js"></script>
   <script src='scripts/main.js'></script>

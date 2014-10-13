@@ -163,3 +163,11 @@ article {
   padding: 15px;
   overflow: hidden;
   font-family: monospace; }
+
+.info2 {
+  background: #333;
+  color: white;
+  float: left;
+  padding: 15px;
+  overflow: hidden;
+  font-family: monospace; }
