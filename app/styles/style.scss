@@ -6,7 +6,7 @@
 
 $heady-color: RGBA(227, 228, 228, .5);
 $darker-heady: RGBA(227, 228, 228, .9);
-$hover-color: RGBA(65, 131, 196, 1);
+$hover-color: #4183c4;
 $text-color: #333;
 $lighter-text: #666;
 $primary-font: Helvetica, arial, sans-serif;
@@ -147,7 +147,7 @@ span.polaroid {
 article {
   display: inline-block;
   float: left;
-  margin: 1.5em 0;
+  margin: 1.5em 0 0 0;
   width: 75%;
 
   .tabBlock {
@@ -199,6 +199,18 @@ article {
 
       display: inline-block;
     }
+  }
+
+  h3 {
+    color: $hover-color;
+    font-family: $primary-font;
+    font-weight: bold;
+  }
+
+  h4 {
+    color: $lighter-text;
+    font-family: $primary-font;
+    font-weight: 100;
   }
 }
 

@@ -33,13 +33,13 @@ a {
   color: #333;
   text-decoration: none; }
   a:hover {
-    color: RGBA(65, 131, 196, 1); }
+    color: #4183c4; }
 
 nav {
   height: 2.75em;
   margin: 0 7% 0 8%; }
   nav .octicon:hover {
-    color: RGBA(65, 131, 196, 1); }
+    color: #4183c4; }
   nav ul li {
     float: left; }
   nav .left {
@@ -106,7 +106,7 @@ span.polaroid {
 article {
   display: inline-block;
   float: left;
-  margin: 1.5em 0;
+  margin: 1.5em 0 0 0;
   width: 75%; }
   article .tabBlock {
     border-bottom: 1px solid #ddd;
@@ -147,6 +147,14 @@ article {
     width: 500px; }
     .pop-rop section.active {
       display: inline-block; }
+  .pop-rop h3 {
+    color: #4183c4;
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: bold; }
+  .pop-rop h4 {
+    color: #666;
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: 100; }
 
 .error {
   background: red;

@@ -64,9 +64,11 @@
     </div><!-- END OF PAGE WRAPPER -->
   </section>
   <script type="text/template" id="tabTemplate">
-    <h1><%= name %></h1>
-    <h2><%= description %></h2>
-    <h3>Last updated <%=updated_at %></h3>
+    <ul>
+        <li><h3 class="repo-list-name"><%= name %></h3></li>
+        <li><h4><%= description %></h4></li>
+        <li><h3>Last updated <%=updated_at %></h3></li>
+    </ul>
   </script>
   <script type="text/template" id="sidebarTemplate">
     <aside>
